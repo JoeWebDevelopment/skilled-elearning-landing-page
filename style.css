@@ -142,6 +142,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@layer components{
+    .card{
+        background-color: var(--clr-neutral);
+        box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+}
+
 @layer layout{
     body{
         width: 100vw;
@@ -182,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        max-height: 560px;
     } 
 
     .hero-info-container{
@@ -209,6 +217,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     .hero-image-mobile{
         display: none;
+    }
+
+    
+    .cards-wrapper{
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .cards-container-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 auto;
+        border: 2px solid black;
+        gap: 2rem;
+        row-gap: 3.5rem;
     }
 
     @media (max-width: 750px){
