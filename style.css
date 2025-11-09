@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 150%;
         letter-spacing: 0px;
         font-weight: 500;
-        color: var(--clr-blue-600);
+        color: var(--clr-grey)
     }
 
     .card-link{
@@ -140,18 +140,61 @@ h1, h2, h3, h4, h5, h6 {
     .hero-btn-link{
         background-color: var(--clr-pink-600);
     }
+
+    .footer-btn-link{
+        background-color: var(--clr-blue-600);
+    }
 }
 
 @layer components{
     .card{
         background-color: var(--clr-neutral);
         box-shadow: 0 8px 24px rgba(0,0,0,.06);
+        padding: 64px 32px 40px 32px;
+        border-radius: 15px;
+        display: flex;
+        max-height: 322px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
+
+    .card img{
+        position: relative;
+        top: -52px;
+    }
+
+    .card-info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: -36px;
+        
+    }
+
+    .card-link{
+        text-decoration: none;
+        color: #F74780;
+    }
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card:first-of-type{
+        background-color: var(--clr-pink-600);
+        color: white;
+        
+    }
+    
 }
 
 @layer layout{
     body{
-        width: 100vw;
+        width: 100%;
     }
 
     header{
@@ -165,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-inline: auto;
 
     }
-    nav{
+    header nav{
         padding-inline: 80px;
         margin-block-end: 2rem;
     }
@@ -189,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        max-height: 560px;
+        padding-inline: 1.25rem;
     } 
 
     .hero-info-container{
@@ -212,8 +255,6 @@ h1, h2, h3, h4, h5, h6 {
     .hero-image{
         align-items: flex-start;
         position: relative;
-        top: -5.5rem;
-        left: 15rem;
     }
     .hero-image-mobile{
         display: none;
@@ -228,25 +269,135 @@ h1, h2, h3, h4, h5, h6 {
     .cards-container-grid{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        margin: 0 auto;
-        border: 2px solid black;
         gap: 2rem;
         row-gap: 3.5rem;
+        padding-inline: 1.25rem;
+        max-width: 1120px;
+    }
+    
+    .cards-section{
+        margin: 0 auto;
     }
 
-    @media (max-width: 750px){
+    main{
+        margin: 0 auto;
+    }
+    
+
+    footer{
+        background-color: var(--clr-blue-900);
+        margin-top: 144px;
+        border: 2px solid white;
+        padding: 24px 80px;
+    }
+    
+    .footer-wrapper{
+        display: flex;
+        border: 2px solid black;
+        max-width: 1120px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+   @media (max-width: 1120px){
+        
+    .header-wrapper{
+        max-width: 768px;
+    }
+
+    .nav-container{
+        max-width: 680px;
+    }
+
+    .two-column-hero{
+        max-width: 680px;
+    }
+    
+    .hero-info-container{
+        max-width: 328px;
+    }
+
+    .heading-lrg{
+        text-wrap: nowrap;
+    }
+
+    .hero-info{
+        max-width: 326px;
+    }
+
+    .cards-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 680px;
+    }
+    
+    main{
+            max-width: 768px;
+            margin-top: 2.5rem;
+        }    
+    
+    .cards-container-grid{
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid black;
+    
+    }
+
+
+
+   
+
+    }
+
+     @media (max-width: 750px){
         .hero-image{
-            display: none;
+            
         }
 
-        .hero-image-mobile{
-            display: block;
+        .hero-wrapper{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
         }
 
         .two-column-hero{
         grid-template-columns: 1fr;
-    }
-    }
+        max-width: 335px;
+        margin: 0 auto;
+        padding-inline: .5rem
+        }
+        
+        
+        .hero-info-container{
+          
+            border: 2px solid black;
+            
+        }
 
+        .hero-info{
+            border: 2px solid black;
+            
+        }
+        .heading-lrg{
+            
+        }
+
+        .cards-container-grid{
+            grid-template-columns: 1fr;
+            border: 2px solid black;
+        }
+    }
     
 }
