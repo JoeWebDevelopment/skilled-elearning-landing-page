@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+@layer customproperties{
+    :root{
+        --clr-blue-900: #13183F;
+        --clr-blue-600: #6663ac;
+        --clr-pink-600: #F74780;
+        --clr-pink-300: #FFa7c3;
+        --clr-grey: #83869A;
+        --clr-neutral: #FFF;
+
+        
+    }
+}
+
 @layer reset{
     /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -58,7 +71,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @layer base-styles{
-    
+
+    body{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .heading-lrg{ 
+
+    }
+
+    .heading-hero-card{
+
+    }
+
+    .heading-md{
+
+    }
+
+    .heading-card{
+
+    }
+
+    .body-text{
+
+    }
+
+    .card-link{
+
+    }
+
+    .btn-link{
+
+    } 
 }
 
 @layer layout{
