@@ -70,9 +70,81 @@ a{
   line-height: 150%;
   font-weight: 700;
   font-size: 1.125rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .dark-btn{
   background-color: var(--clr-blue-900);
   color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+}
+
+.dark-btn:hover{
+  opacity: 0.8;
+}
+
+
+/* 
+
+
+Media Queries
+
+
+*/
+
+@media (max-width: 350px){
+  .dark-btn{
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+
+/* 
+
+Hero Section
+
+*/
+
+.hero-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.hero-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-two-column-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+.hero-heading{
+  font-size: 3.5rem;
+  text-wrap: nowrap;
+  color: var(--clr-blue-900);
+}
+
+.hero-btn{
+background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+color: white;
+}
+
+.hero-btn:hover{
+  opacity: 0.8;
+}
+
+.hero-img{
+  margin-top: -15rem;
+  margin-right: -33rem;
 }
