@@ -244,6 +244,42 @@ Grid Section
   line-height: 150%;
 
 }
+
+
+
+
+/* 
+
+Footer
+
+*/
+
+footer{
+  background-color: var(--clr-blue-900);
+  padding: 24px 44px;
+  margin-top: 3rem;
+}
+
+.footer-nav{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block-start: 1rem;
+  align-items: center;
+  background-color: #13183F;
+}
+
+.footer-btn{
+  background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+  color: white
+;
+}
+
+.footer-btn:hover{
+  opacity: 0.8;
+}
+
 /* 
 
 
