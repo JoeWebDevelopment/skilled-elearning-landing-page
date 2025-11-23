@@ -94,25 +94,7 @@ Media Queries
 
 */
 
-@media (max-width: 350px){
-  .dark-btn{
-    padding: 1rem 1rem;
-    font-size: 1rem;
-  }
-}
 
-@media (max-width: 1100px){
-  .desktop-hero-image{
-    display: none;
-  }
-  .tablet-hero-image{
-    display: block;
-  }
-
-  .hero-img{
-    margin-right: 0rem;
-  }
-}
 
 /* 
 
@@ -427,7 +409,7 @@ Media Queries
 }
 
 @media (max-width: 350px){
-  .dark-btn{
+  .btn{
     padding: 1rem 1rem;
     font-size: 1rem;
 
