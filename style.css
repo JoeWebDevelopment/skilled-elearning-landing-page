@@ -321,7 +321,6 @@ Media Queries
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    border: 2px solid black;
   }
 
   .hero-tablet-image{
@@ -427,4 +426,21 @@ Media Queries
 
 
 
-/* 
+
+
+.dark-btn{
+  background-color: var(--clr-blue-900);
+  color: pink;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+whydoesntthischange:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
